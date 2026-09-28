@@ -1,0 +1,9 @@
+spec_version: "0.1.0"
+name: onboarding-readiness-coordinator
+version: 1.0.0
+description: Tracks onboarding prerequisites, identifies missing items, and coordinates reminders for new-joiner readiness.
+author: Janice Benita F
+runtime:
+  max_turns: 20
+  timeout: 120
+tags: [hr, onboarding, coordination, compliance]
