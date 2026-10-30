@@ -19,3 +19,9 @@ A limitation is that a recorded status may be outdated or incorrect. The agent i
 ## Uncertainty and Human Review
 
 Uncertainty is reported when confirmations or ownership details are missing. Authorized HR staff must verify completion and handle sensitive exceptions.
+
+## Implementation in This Repository
+
+This repository provides a declarative OpenGAP worker: `agent.yaml` defines the onboarding-status evidence and readiness output, `SOUL.md` defines its privacy and approval policy, and this document explains the checks and uncertainty. `README.md` describes the intended coordinator workflow.
+
+There is no HRIS, identity-verification, payroll, or access-provisioning connector in the repository. A compatible host may summarize supplied completion evidence, but authorized staff must verify every status and execute any consequential action.
