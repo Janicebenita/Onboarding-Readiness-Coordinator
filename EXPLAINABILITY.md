@@ -22,6 +22,6 @@ Uncertainty is reported when confirmations or ownership details are missing. Aut
 
 ## Implementation in This Repository
 
-This repository provides a declarative OpenGAP worker: `agent.yaml` defines the onboarding-status evidence and readiness output, `SOUL.md` defines its privacy and approval policy, and this document explains the checks and uncertainty. `README.md` describes the intended coordinator workflow.
+`agent.py` implements `assess_readiness(record)`. It compares required, completed, and independently verified item sets; separates missing from awaiting-verification items; returns only `ready-for-human-review` when every item is verified; retains all three sets as evidence; never grants approval; and requires authorized HR review. `test_agent.py` verifies that completed-but-unverified material remains not ready.
 
-There is no HRIS, identity-verification, payroll, or access-provisioning connector in the repository. A compatible host may summarize supplied completion evidence, but authorized staff must verify every status and execute any consequential action.
+There is no HRIS, identity-verification, payroll, or access-provisioning connector. Authorized staff must verify every status and execute all consequential actions.
